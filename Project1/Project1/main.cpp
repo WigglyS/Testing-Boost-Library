@@ -31,22 +31,23 @@ int roll_die() {
 
 int main()
 {
+	cout << "ForEach function" << endl;
 	//the for each function for something for each of something, so in my example it is displaying the character to each character in the string
 	string str("abcdefghijklmnopqrstuvwxyz");
 	BOOST_FOREACH(char ch, str)
 	{
-		std::cout << ch << endl;
+		cout << ch << endl;
 	}
 
 	system("pause");
 
-
+	cout << "Random Funtion" << endl;
 	int RandNum = roll_die();
 	cout << RandNum<< endl;
 
 	system("pause");
 
-
+	cout << "Trim Function" << endl;
 	//the trim functions deletes the white space from either side of the string ,
 	//you can also usetrim_left_copy to just trim the left etc
 	string Trim = "                               hello                      ";
@@ -56,7 +57,7 @@ int main()
 
 	system("pause");
 
-
+	cout << "Split Function" << endl;
 	//the split functions takes a string and then spits it into multiple strings at the character you choose int the is_any_of()
 	//and then stores all the string in a vector
 	string SplitString = "Aaaaa-Bbbbb/Ccccc";
@@ -71,8 +72,8 @@ int main()
 	
 	system("pause");
 
-
-	//fromat lets you set a format for the information to be put in, you seperate them with %
+	cout << "Format Function" << endl;
+	//format lets you set a format for the information to be put in, you seperate them with %
 	//and the info you give it will be put in between the percetsigns so this will att the . inbetween each number
 	cout << boost::format{ "%1%.%2%.%3%" } % 8 % 31 % 1997 << '\n';
 
